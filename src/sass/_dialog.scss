@@ -1,0 +1,18 @@
+
+/**
+ * 图片预览弹窗
+ */
+$preImg-max-width: 750px;
+
+// 限制弹窗宽度
+.upload-image-preview-dialog {
+    max-width: $preImg-max-width;
+}
+
+// 解决限制图片宽度问题
+.upload-image-preview-img {
+    vertical-align: middle;
+    img {
+        max-width: $preImg-max-width - 50px;
+    }
+}

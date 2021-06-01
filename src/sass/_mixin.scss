@@ -1,0 +1,22 @@
+
+// 水平居中
+@mixin cmm-translateX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// 垂直居中
+@mixin cmm-translateY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// 水平，垂直居中
+@mixin cmm-translateXY {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}

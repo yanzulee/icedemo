@@ -1,0 +1,9 @@
+
+// 水平居中
+@mixin scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

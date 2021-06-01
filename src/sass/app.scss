@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@import "constant"; // 引入constant定义
+
+@import "dialog"; // 引入弹窗修复样式
+
+@import "tabs"; // 引入tabs选项卡修复样式
+
+
+/**
+ * 全局主题样式 替换主题变量
+ */
+
+//打印样式
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    -moz-print-color-adjust: exact;
+    -ms-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+// 为IceContainer附加样式(本组件官方已废弃)
+.container-block {
+  box-shadow: $shadow-1-down;
+  border-radius: 0!important;
+}
+
+// 更新了alifd的组件弹层都崩了。。。临时(等待下一回组件更新)
+.next-overlay-wrapper {
+  width: 100%;
+}
+
+// 修复更新主题包@alifd/theme-zgcw-pc v1.0.0 以上数字选择器按钮不清楚
+.next-number-picker .next-number-picker-handler i {
+  color: $color-white;
+}
+
+// 功能区样式
+.function-container {
+  // margin-bottom: 10px;
+  padding: 10px;
+}
+
+// 业务统计容器样式
+.business-statistics-container {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.05);
+}
+
+// 复选框样式
+.next-checkbox-group {
+  @include line-height;
+}
+
+// 翻页区样式
+.pagination-wrapper-container {
+  text-align: right;
+  padding-top: 26px;
+}
+
+// 卡片列表样式
+.card-list {
+  @include card-base;
+}
+
+// 卡片带图样式
+.card-img-list {
+  @include card-base;
+  flex-direction: column;
+  width: 185px;
+  // max-width: ;
+}
+
+// 每页右上角按钮布局
+.right-top-function {
+  // padding: 20px
+}
+
+.text-right {
+  text-align: right;
+}
+
+// 每页副标题
+.page-title {
+  margin-bottom: 20px;
+  font-size: $font-size-subhead;
+  font-weight: $font-weight-medium;
+  color: $color-text1-5;
+}
+
+.box-title {
+  margin-bottom: 14px;
+  color: #888888;
+  font-size: 14px;
+  text-align: left;
+}
+
+.hccx-flex{
+  display: flex;
+}
+
+.hccx-flex-center {
+  display: flex;
+  align-items: center;
+}
+
+
+// .next-btn-primary{
+//   background-color: #25C6B0!important;
+//   border-radius: 0!important;
+// }
+// .next-btn-warning{
+//   color: #25C6B0!important;
+//   border-color: #25C6B0!important;
+//   border-radius: 0!important;
+// }
+
+// .next-btn-warning::after{
+//   color: #FFFFFF!important;
+//   border-color: #25C6B0!important;
+//   border-radius: 0!important;
+// }
+
+// .next-btn-helper{
+//   border-color: #25C6B0!important;
+//   border-radius: 0!important;
+// }
+.next-balloon-closable {
+  padding:16px!important
+}
+
+// 级联下拉选择框宽度调整
+.next-cascader-menu-wrapper {
+  width: 120px!important;
+}
+
+//修改所有取消按钮颜色
+.next-btn.next-medium.next-btn-normal.next-dialog-btn{
+  background-color: #fff !important;
+  color: #888 !important;
+  border-color: #ddd !important;
+}
+
+//模块标题icon统一样式
+.mode-title-icon{
+  display: inline-block;
+    width: 4px;
+    height: 15px;
+    background: linear-gradient(90deg, #6DCC52 0%, #44B178 100%);
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+// .user-management-page{
+//   // background-color: #fff;
+// }

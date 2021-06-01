@@ -1,0 +1,65 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.ice-design-layout-dark.ice-design-layout,
+.ice-design-layout-test.ice-design-layout {
+  // background-image: url(https://img.alicdn.com/tfs/TB1_YvwXTtYBeNjy1XdXXXXyVXa-1680-370.png);
+  // background-color: #f2f2f2;
+  background-color: $color-other-5;
+}
+
+.ice-design-layout-dark,
+.ice-design-layout-test {
+  &.ice-design-layout {
+    min-height: 100vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .ice-layout {
+    width: 100%;
+    min-height: 100vh;
+    // padding: 0 20px;
+    background: transparent;
+  }
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 80px;
+    // background: #333333;
+  }
+
+  .ice-layout-main {
+    padding: 16px 16px 0 16px;
+  }
+
+  .ice-layout-section {
+    // margin: 20px 0 0;
+  }
+}
+
+.ice-design-layout-dark{
+  .ice-layout-aside {
+    background-color: #35363C;
+  }
+}
+
+.ice-design-layout-test{
+  .ice-layout-aside {
+    // background-color: #116ca9;
+    background-color: $color-link-1;
+    // background-color: $color-other-4;
+  }
+}
+
+// 取消页面footer高度过高问题
+.ice-layout-footer{
+  padding: 0;
+}
+.ice-design-layout-footer .ice-design-layout-footer-body{
+  margin:0
+}

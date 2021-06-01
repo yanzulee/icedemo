@@ -1,0 +1,97 @@
+@import "../../../../sass/constant"; // 引入constant定义
+
+.ice-layout {
+  .ice-design-layout-aside {
+    .next-nav,
+    .next-nav-sub-nav-item {
+      background: transparent;
+    }
+    .next-nav .next-nav-item.next-menu-item {
+      // background: transparent;
+      color: white;
+      padding: 0 20%;
+    }
+    .next-nav .next-menu-item-text i {
+      margin-right: 20px;
+      font-weight: 500;
+    }
+    .next-nav .next-menu-sub-menu .next-menu-item,
+    // .next-nav .next-menu-sub-item {
+    //   transition: none;
+
+    //   &.next-selected,
+    //   &:hover {
+    //     background: #01C1B2;
+    //     // border-radius: $corner-2;
+    //     border-radius: 0;
+    //   }
+    // }
+    .next-nav .next-menu-sub-menu .next-menu-item {
+      padding-left: 20% !important;
+    }
+    .collapse-btn {
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+    .next-menu-icon-arrow {
+      right: 22px;
+    }
+
+    .menu-btn {
+      position: fixed;
+      left: 0;
+      top: 82px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 0 6px 6px 0;
+      color: #fff;
+      background: $color-brand1-6;
+      text-align: center;
+      cursor: pointer;
+      z-index: 9;
+      text-decoration: none;
+      &:hover {
+        color: #e7e7e7;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ice-layout {
+    .ice-design-layout-aside {
+      position: fixed;
+      left: -256px;
+      top: 0px;
+      bottom: 0;
+      padding: 0 20px;
+      z-index: 9999;
+      // background: #116ca9 !important;
+      background: $color-link-1 !important;
+      // background: $color-other-4 !important;
+
+
+      &.env-prod{
+        background: $color-other-4 !important;
+      }
+    }
+
+    .open-drawer {
+      transform: translateX(256px);
+      .logo {
+        width: 200px;
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// .next-menu-item-inner {
+//   font-size: 14px!important;
+// }

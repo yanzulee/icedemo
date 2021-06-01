@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="./favicon.ico" mce_href="./favicon.ico" type="image/x-icon">
+  <title>demodemo</title>
+
+  <!-- 百度统计 -->
+  <script>
+    const APP_ENV = 'prod'; // prod-正式, local-本地, test-测试, demo-Mock测试
+
+    if (APP_ENV !== 'demo') {
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        if (APP_ENV === "prod") {
+          hm.src = "https://hm.baidu.com/hm.js?012bd0653f717c10ba98324cec9e0639";
+        } else {
+          hm.src = "https://hm.baidu.com/hm.js?a3d92a6a757c929b50ffe0a2fd451600";
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="ice-container"></div>
+</body>
+
+</html>

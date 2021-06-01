@@ -1,0 +1,145 @@
+{
+  "name": "@icedesign/pro-scaffold",
+  "version": "1.2.1",
+  "description": "该模板提供了 Redux、Mock、国际化、权限管理、注册登录等完整的方案，且内置了丰富的区块，主要用于展示现有区块的分类以及区块组合的效果，使用时需要根据需求进行删除和添加",
+  "files": [
+    "src/",
+    "build/",
+    "public/",
+    "tests/",
+    "_gitignore",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc"
+  ],
+  "dependencies": {
+    "@alifd/next": "1.19.x",
+    "@alifd/theme-hccx": "^0.6.9",
+    "@alifd/theme-zgcw-pc": "^1.0.7",
+    "@antv/data-set": "^0.9.5",
+    "@ice/form": "^0.1.5",
+    "@icedesign/balloon-confirm": "^1.0.4",
+    "@icedesign/container": "^1.0.4",
+    "@icedesign/data-binder": "^1.0.5",
+    "@icedesign/dynamic-icon": "^0.1.8",
+    "@icedesign/ellipsis": "^1.0.4",
+    "@icedesign/form-binder": "^1.0.3",
+    "@icedesign/foundation-symbol": "^1.0.4",
+    "@icedesign/img": "^1.0.2",
+    "@icedesign/label": "^1.0.4",
+    "@icedesign/layout": "^1.0.8",
+    "@icedesign/qrcode": "^1.0.4",
+    "@icedesign/theme": "^1.x",
+    "axios": "^0.18.1",
+    "axios-cache-adapter": "^2.5.0",
+    "bizcharts": "^3.2.2",
+    "bizgoblin": "0.0.1",
+    "braft-editor": "^2.3.9",
+    "braft-extensions": "^0.1.1",
+    "braft-utils": "^3.0.12",
+    "classnames": "^2.2.5",
+    "compressorjs": "^1.0.5",
+    "echarts": "^4.7.0",
+    "echarts-for-react": "^2.0.16",
+    "enquire-js": "^0.1.2",
+    "fabric": "^3.6.3",
+    "history": "^4.7.2",
+    "hoist-non-react-statics": "^3.3.0",
+    "html2canvas": "^1.0.0-rc.3",
+    "intl": "^1.2.5",
+    "invariant": "^2.2.4",
+    "js-export-excel": "^1.1.2",
+    "jsbarcode": "^3.11.0",
+    "jspdf": "^1.5.3",
+    "lodash": "^4.17.10",
+    "md5": "^2.2.1",
+    "mockjs": "^1.1.0",
+    "moment": "^2.23.0",
+    "node-sass": "^4.12.0",
+    "nprogress": "^0.2.0",
+    "path-to-regexp": "^2.2.1",
+    "prop-types": "^15.5.8",
+    "react": "^16.4.2",
+    "react-amap": "^1.2.8",
+    "react-clipboard.js": "^2.0.13",
+    "react-code-diff-lite": "^1.0.5",
+    "react-document-title": "^2.0.3",
+    "react-dom": "^16.4.2",
+    "react-intl": "^2.9.0",
+    "react-photoswipe": "^1.3.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "5.0.0-alpha.6",
+    "react-to-print": "^2.5.0",
+    "redux": "3.6.0",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "save-as": "^0.1.8",
+    "swiper": "^5.2.1",
+    "ua-parser-js": "^0.7.21",
+    "uuid-js": "^0.7.5",
+    "viewerjs": "^1.5.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "html-webpack-plugin": "^4.0.0-beta.5",
+    "ice-scripts": "^1.6.0",
+    "webpack-merge": "^5.7.3"
+  },
+  "scripts": {
+    "start": "ice dev",
+    "start:test": "cross-env N_ENV=test ice dev",
+    "start:local": "cross-env N_ENV=local ice dev",
+    "start:uat": "cross-env N_ENV=uat ice dev",
+    "build:test": "cross-env N_ENV=test ice build",
+    "build:uat": "cross-env N_ENV=uat ice build",
+    "build:prod": "cross-env N_ENV=prod ice build",
+    "lint": "eslint . --ext '.js,.jsx' --fix"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "buildConfig": {
+    "theme": "@alifd/theme-hccx",
+    "entry": "src/index.js",
+    "localization": false,
+    "output": {
+      "publicPath": "./"
+    }
+  },
+  "scaffoldConfig": {
+    "builder": "ice-scripts",
+    "name": "ice-design-pro",
+    "title": "ICE Design Pro",
+    "categories": [
+      "基础模板"
+    ],
+    "screenshot": "https://img.alicdn.com/tfs/TB1bqV5JwTqK1RjSZPhXXXfOFXa-2860-1580.png",
+    "screenshots": [
+      "https://img.alicdn.com/tfs/TB1bqV5JwTqK1RjSZPhXXXfOFXa-2860-1580.png",
+      "https://img.alicdn.com/tfs/TB1n_CXJwHqK1RjSZFgXXa7JXXa-2862-1580.png",
+      "https://img.alicdn.com/tfs/TB1Qll_JrvpK1RjSZFqXXcXUVXa-2860-1580.png"
+    ],
+    "defaultLayout": "BasicLayout"
+  },
+  "iceworks": {
+    "type": "react",
+    "adapter": "adapter-react-v0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ice-lab/react-materials/tree/master/scaffolds/ice-design-pro"
+  },
+  "title": "新畅行管理后台"
+}

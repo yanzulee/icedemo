@@ -1,0 +1,63 @@
+
+// .next-tabs-tab-inner {
+//     // height: 45px;
+//     border-top: '1px solid #25C6B0';
+//     color: #25C6B0;
+//     vertical-align: center;
+// }
+
+// .next-tabs-wrapped.next-tabs-top>.next-tabs-bar .next-tabs-tab {
+//     // border: none;
+
+//     margin-right: -1px!important;
+// }
+
+// .next-tabs-wrapped.next-tabs-top>.next-tabs-bar .next-tabs-tab:before {
+//     border-top: 3px solid #25C6B0!important;
+//     border-radius: 0!important;
+//     top: -2px!important
+// }
+
+// .next-tabs.next-medium .next-tabs-tab-inner {
+//     background-color: #FFFFFF;
+//     border-radius: 0!important;
+// }
+
+// .next-tabs-tab {
+//     background-color: #FFFFFF;
+//     // border-top: 2px solid #25C6B0!important;
+//     border-width: 2px 0 0 0!important;
+//     border-radius: 0!important;
+// }
+
+
+// .next-tabs-tab.active > .next-tabs-tab-inner{
+//     background-color: #EAFEFF;
+// }
+
+// .next-tabs-wrapped.next-tabs-top > .next-tabs-bar .next-tabs-tab.active{
+//     border-color: #FFFFFF!important;
+// }
+
+// .next-tabs-bar {
+//     background-color: #FFFFFF!important;
+// }
+
+
+  
+  // 表格操作列下文字样式
+.table-operation-word {
+    font-size: 13px;
+    color: #008AF1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+  
+.operation-line {
+    width: 1px;
+    height: 13px;
+    background-color: rgb(226, 226, 226);
+    margin-left: 5px; margin-right: 5px;
+}
+
